@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cambo&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+body, html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--grey900);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    background-color: var(--grey800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    color: var(--white);
+    gap: 8px;
+    border-radius: 10px;
+}
+.card * {
+    font-family: Inter;
+}
+
+img {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+}
+span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+span * {
+    margin: 0;
+}
+span h1 {
+    font-weight: 700;
+}
+.location {
+    font-weight: 600;
+    color: var(--green);
+}
+.desc {
+    font-size: 14px;
+    line-height: 150%;
+    width: 100%;
+    text-align: center;
+}
+.card button {
+    font-weight: 600;
+    background-color: var(--grey700);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 
+        color 100ms ease-in-out, background-color 100ms ease-in-out;
+}
+.card button:hover {
+    cursor: pointer;
+    color: var(--grey700);
+    background-color: var(--green);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 1440px) {
+    .card {
+        width: 350px;
+        padding: 32px;
+    }
+}
